@@ -1,0 +1,107 @@
+.article {
+  max-width: 376px;
+  min-width: 224px;
+  background: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  flex-basis: 100%;
+}
+.article:not(:last-child) {
+  margin-right: 32px;
+}
+.article__img {
+  display: block;
+  width: 100%;
+  height: 162px;
+  background: #d8d8d8;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+.article__main {
+  height: 255px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.article__date {
+  font-size: 12px;
+  color: #8f8f8f;
+}
+.article__title {
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.article__text {
+  font-size: 16px;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.article__more {
+  width: 150px;
+  height: 40px;
+  padding: 8px;
+  color: #fff;
+  background: var(--btn-bg);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  transition: 0.3s ease-in-out;
+}
+.article__more:disabled {
+  background: var(--btn-bg-disabled);
+  color: #70c05b;
+  pointer-events: none;
+}
+.article__more:hover {
+  box-shadow: 4px 8px 16px rgba(112, 192, 91, 0.2);
+  transition: 0.3s ease-in-out;
+}
+.article__more:active {
+  box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.article__date,
+.article__text,
+.article__title {
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .article {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .article:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .article__img {
+    height: 230px;
+  }
+  .article__main {
+    height: 210px;
+  }
+  .article__title {
+    -webkit-line-clamp: 1;
+  }
+  .article__text {
+    -webkit-line-clamp: 3;
+  }
+}
+@media (max-width: 430px) {
+  .article__img {
+    height: 160px;
+  }
+}/*# sourceMappingURL=article.css.map */

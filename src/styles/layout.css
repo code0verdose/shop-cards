@@ -1,6 +1,22 @@
 .container {
   max-width: 1208px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 16px;
   box-sizing: content-box;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 150%;
+}
+
+@media (max-width: 768px) {
+  .flex-wrapper {
+    flex-direction: column;
+  }
 }

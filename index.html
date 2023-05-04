@@ -1,19 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop - Cards</title>
-  <link rel="stylesheet" href="./src/styles/style.css">
-</head>
-<body>
-  <main>
-    <section class="articles">
-      <div class="container">
-        
-      </div>
-    </section>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Cards</title>
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="articles">
+        <div class="container">
+          <h1 class="articles__title title">Articles</h1>
+          <div class="flex-wrapper">
+            <!-- Card 1 -->
+            <article class="article">
+              <img
+                srcset="
+                  ./src/images/articles/doc.webp    1x,
+                  ./src/images/articles/doc_2x.webp 2x
+                "
+                alt=""
+                class="article__img"
+              />
+              <div class="article__main">
+                <span class="article__date">05.03.2021</span>
+                <h2 class="article__title">
+                  Режим использования масок и перчаток на территории магазинов
+                </h2>
+                <p class="article__text">
+                  Подробная информация о режимах использования масок и перчаток
+                  на территории магазинов "ЛЕНТА". Информация обновляется каждый
+                  будний день.
+                </p>
+                <button disabled class="article__more">Подробнее</button>
+              </div>
+            </article>
+            <!-- Card 2 -->
+            <article class="article">
+              <img
+                srcset="
+                  ./src/images/articles/flowers.webp    1x,
+                  ./src/images/articles/flowers_2x.webp 2x
+                "
+                alt=""
+                class="article__img"
+              />
+              <div class="article__main">
+                <span class="article__date">05.03.2021</span>
+                <h2 class="article__title">Весеннее настроение для каждой</h2>
+                <p class="article__text">
+                  8 Марта – это не просто Международный женский день, это ещё
+                  день тюльпанов, приятных сюрпризов и праздничных тёплых
+                  пожеланий.
+                </p>
+                <button class="article__more">Подробнее</button>
+              </div>
+            </article>
+            <!-- Card 3 -->
+            <article class="article">
+              <img
+                srcset="
+                  ./src/images/articles/food.webp    1x,
+                  ./src/images/articles/food_2x.webp 2x
+                "
+                alt=""
+                class="article__img"
+              />
+              <div class="article__main">
+                <span class="article__date">05.03.2021</span>
+                <h2 class="article__title">
+                  ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!
+                </h2>
+                <p class="article__text">
+                  Голосуйте за любимые категории, выбирайте категорию-победителя
+                  в мобильном приложении и получайте кешбэк 10% баллами в
+                  апреле!
+                </p>
+                <button disabled class="article__more">Подробнее</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
